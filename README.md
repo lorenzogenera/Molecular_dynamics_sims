@@ -1,6 +1,6 @@
 # 2D Molecular Dynamics Sims
 
-A from-scratch 2D molecular dynamics engine in Python that simulates argon atoms interacting through the Lennard-Jones potential. The notebook builds the engine step by step — from a single pair of atoms to a small gas — and uses it to compare numerical integrators, recover thermodynamic quantities, and observe emergent solid/liquid/gas behavior.
+A from-scratch 2D molecular dynamics engine in Python that simulates argon atoms interacting through the Lennard-Jones potential. The notebook builds the engine step by step, from a single pair of atoms to a small gas, and uses it to compare numerical integrators, recover thermodynamic quantities, and observe emergent solid/liquid/gas behavior.
 
 Built with only numpy and matplotlib. The notebook is fully self-contained.
 
@@ -10,14 +10,14 @@ How to Run:
 
 Total run time is 2-3 minutes on laptop. 
 
-** What's Inside:**
+**What's Inside:**
 1. Lennard-Jones potential: implementation of $U(r)$ and $F(r)$, plus a bisection root-finder that recovers the equilibrium separation $r_{\min} = 2^{1/6}\sigma$ and the contact diameter $\sigma$ numerically.
 2. Two-particle dynamics: atoms displaced slightly from equilibrium and integrated for 300 oscillation periods. Used to compare Euler vs RK2 energy conservation.
 3. Velocity Verlet: symplectic integrator added to the comparison, showing bounded energy error vs RK2's drift.
 4. N-particle gas: 9 atoms on a 3×3 grid with random initial velocities, bouncing inside a reflective box. Kinetic, potential, and total energy tracked over time.
 5. Statistical mechanics: speed histogram from the equilibrated portion of the run, overlaid against the 2D Maxwell-Boltzmann distribution evaluated at the temperature measured from equipartition.
-Phase behavior: same gas run at three temperatures (cold/warm/hot) showing solid-like, liquid-like, and gas-like configurations.
-6. Pressure from wall collisions: momentum transferred to walls is accumulated and compared against the 2D ideal gas law.
+6. Phase behavior: same gas run at three temperatures (cold/warm/hot) showing solid-like, liquid-like, and gas-like configurations.
+7. Pressure from wall collisions: momentum transferred to walls is accumulated and compared against the 2D ideal gas law.
 
 # Main Physics
 
