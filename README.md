@@ -4,9 +4,25 @@ A from-scratch 2D molecular dynamics engine in Python that simulates argon atoms
 
 Built with only numpy and matplotlib. The notebook is fully self-contained.
 
-How to Run:
-1. launch jupyter or any python interpreter
-2. Run all cells top to bottom
+**How to Run:**
+
+1. Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/lorenzogenera/Molecular_dynamics_sims.git
+cd Molecular_dynamics_sims
+pip install numpy matplotlib jupyter
+```
+
+2. Launch the notebook:
+
+```bash
+jupyter notebook 2d_molecular_dynamics_sims.ipynb
+```
+
+Then run all cells top to bottom — each section builds on the previous one. Total runtime is about 2–3 minutes on a laptop.
+
+**Requirements:** Python 3.9+, `numpy`, `matplotlib`, `jupyter`.
 
 Total run time is 2-3 minutes on laptop. 
 
